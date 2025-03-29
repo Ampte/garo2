@@ -53,7 +53,6 @@
 }
 .main{
   grid-area: main;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
