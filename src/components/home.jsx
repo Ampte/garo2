@@ -46,7 +46,9 @@ const Home = () => {
             </div>
             <div className='sidebar'>
                 <div className='sidebar-content'>
-                    <h1>Garo2</h1>
+                    <button className='qmark'>
+                    <i class="fa-solid fa-question" style={{fontSize: '30px'}}></i>
+                    </button>
                     <button className='xmark' onClick={close}>
                     <i class="fa-solid fa-xmark" style={{
                         fontSize: '30px'
