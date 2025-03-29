@@ -88,15 +88,15 @@ form{
 .message-value{
   width: 100%;
   padding: 10px;
-  border-radius: 20px 0 0 20px;
+  border-radius: 10px 0 0 10px;
   border-right: none;
   font-size: large;
   border: 1px solid lightgrey;
-  height: 30px;
+  height: 40px;
 }
 .send-btn{
   padding: 10px;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 10px 10px 0;
   border-left: none;
   border: 1px solid lightgrey;
   background-color: white;
