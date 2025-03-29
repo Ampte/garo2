@@ -24,9 +24,11 @@
 .sidebar{
   display: none;
   height: 100vh;
-  width: 60%;
+  width: 50%;
   position: absolute;
   right: 0;
+  background-color: black;
+  color: white;
 }
 .sidebar-content{
   display: flex;
@@ -34,10 +36,11 @@
 }
 .xmark{
   border: none;
-  background-color: white;
+  background-color: black;
+  color: white;
 }
 .xmark:hover{
-  background-color: lightgrey;
+  color: red;
 }
 .left-bar{
   display: none;
@@ -53,7 +56,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 85vh;
+  height: 90vh;
 }
 .chat-box{
   display: none;

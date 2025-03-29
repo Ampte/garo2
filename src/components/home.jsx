@@ -3,18 +3,17 @@ import '/src/App.css'
 import data from './data'
 
 const Home = () => {
-    const hint = document.querySelector(".hint");
-    const chatBox = document.querySelector(".chat-box");
-    const sidebar = document.querySelector(".sidebar");
     const [inputValue, setInputValue] = useState("");
     const [message, setMessage] = useState("");
     const [response, setResponse] = useState("");
 
     const open = () => {
+        const sidebar = document.querySelector(".sidebar");
         sidebar.style.display = 'block';
     };
 
     const close = () => {
+        const sidebar = document.querySelector(".sidebar");
         sidebar.style.display = 'none';
     }
 
@@ -24,6 +23,8 @@ const Home = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
+        const hint = document.querySelector(".hint");
+        const chatBox = document.querySelector(".chat-box");
         hint.style.display = 'none';
         chatBox.style.display = 'block';
         setMessage(inputValue);
