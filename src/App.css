@@ -92,6 +92,7 @@ form{
   border-right: none;
   font-size: large;
   border: 1px solid lightgrey;
+  height: 30px;
 }
 .send-btn{
   padding: 10px;

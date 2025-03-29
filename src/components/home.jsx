@@ -20,7 +20,7 @@ const Home = () => {
         setMessage(inputValue);
         setResponse("Loading...")
         setTimeout(() => {
-            setResponse(data[inputValue.toLowerCase()]);
+            setResponse(data[inputValue.toLowerCase().trim()]);
         }, 2000);
     };
     return(
