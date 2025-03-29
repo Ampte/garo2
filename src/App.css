@@ -23,6 +23,21 @@
 }
 .sidebar{
   display: none;
+  height: 100vh;
+  width: 60%;
+  position: absolute;
+  right: 0;
+}
+.sidebar-content{
+  display: flex;
+  justify-content: space-between;
+}
+.xmark{
+  border: none;
+  background-color: white;
+}
+.xmark:hover{
+  background-color: lightgrey;
 }
 .left-bar{
   display: none;

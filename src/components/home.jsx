@@ -5,9 +5,18 @@ import data from './data'
 const Home = () => {
     const hint = document.querySelector(".hint");
     const chatBox = document.querySelector(".chat-box");
+    const sidebar = document.querySelector(".sidebar");
     const [inputValue, setInputValue] = useState("");
     const [message, setMessage] = useState("");
     const [response, setResponse] = useState("");
+
+    const open = () => {
+        sidebar.style.display = 'block';
+    };
+
+    const close = () => {
+        sidebar.style.display = 'none';
+    }
 
     const handleChange = (e) => {
         setInputValue(e.target.value);
@@ -28,14 +37,21 @@ const Home = () => {
         <div className='home'>
             <div className='header'>
                 <h1>Garo2</h1>
-                <button className='bar'>
+                <button className='bar' onClick={open}>
                 <i class="fa-solid fa-bars-staggered" style={{
                     fontSize:'large'
                 }}></i>
                 </button>
             </div>
             <div className='sidebar'>
-                <h1>Garo2</h1>
+                <div className='sidebar-content'>
+                    <h1>Garo2</h1>
+                    <button className='xmark' onClick={close}>
+                    <i class="fa-solid fa-xmark" style={{
+                        fontSize: '30px'
+                    }}></i>
+                    </button>
+                </div>
             </div>
             <div className='left-bar'>
                
